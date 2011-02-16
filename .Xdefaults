@@ -1,0 +1,43 @@
+Xft.hinting:	1
+Xft.lcdfilter:	lcddefault
+Xft.api:	96
+Xft.antialias:	1
+Xft.hintstyle:	hintslight
+Xft.autohint:	1
+Xft.rgba:	rgb
+
+URxvt*CursorColor:	#AFD700
+URxvt*saveLines:	1000
+URxvt*background:	#1C1C1C
+URxvt*font:	xft:Terminus:pixelsize=8:antialias=false
+URxvt*internalBorder:	2
+URxvt*geometry:	100x60
+URxvt*externalBorder:	0
+URxvt*foreground:	#D0D0D0
+URxvt*scrollBar:	false
+URxvt*depth:	32
+
+URxvt*perl-ext-common: default,matcher
+URxvt*urlLauncher: /usr/bin/firefox
+URxvt*matcher.button: 1
+
+xrenoise.use_xcursors:	1
+xrenoise.display:	:0.0
+xrenoise.display_resource:	0x00,0x16,0x8B,0x81,0x12,0x5A,0x30,0x31
+xrenoise.executable_path:	/usr/bin/renoise
+*color11:	#E6DB74
+*color9:	#FF669D
+*color13:	#9E6FFE
+*color15:	#F8F8F2
+*color4:	#52B2C4
+*color0:	#1B1D1E
+*color2:	#A6E22E
+*color6:	#5E7175
+*color10:	#BEED5F
+*color8:	#505354
+*color12:	#66D9EF
+*color14:	#A3BABF
+*color3:	#FD971F
+*color1:	#F92672
+*color5:	#9E6FFE
+*color7:	#CCCCC6

@@ -36,3 +36,7 @@ export CONFIG_HZ_1000=y
 export CONFIG_APM=n
 
 export GREP_COLOR="1;33"
+
+# This loads RVM into a shell session
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
+
