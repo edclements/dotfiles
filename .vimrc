@@ -58,9 +58,9 @@ if &t_Co > 2 || has("gui_running")
 	"syntax enable
   	syntax on
   	"set hlsearch
-	set background=dark
-	colorscheme xoria256
-	"colorscheme zenburn
+	"set background=dark
+	"colorscheme xoria256
+  colorscheme zenburn
 endif
 
 "if has("gui_running")
