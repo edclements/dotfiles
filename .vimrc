@@ -14,8 +14,8 @@ set ruler				" show the cursor position all the time
 set showcmd				" display incomplete commands
 set incsearch			" do incremental searching
 set visualbell t_vb=	" turn off noisy bell
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab			" replace tabs with spaces
 set encoding=utf-8
 
