@@ -1,0 +1,3 @@
+#!/bin/bash
+
+rip cd -d /dev/cdrom rip --offset=6 --output-directory='/mnt/data/music' --track-template='%A/%d/%t - %n' --disc-template='%A/%d/%A - %d' RIP_DEBUG=5

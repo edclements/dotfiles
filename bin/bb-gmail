@@ -1,0 +1,2 @@
+#!/bin/sh
+chromium --user-data-dir=~/.config/chromium-bbug --app=http://gmail.com

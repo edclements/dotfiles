@@ -1,0 +1,8 @@
+#!/bin/sh
+# vmstat log every 5 seconds for 24 hours
+
+#vmstat 5 17280 
+vmstat 1 | while read line
+do 
+  echo "`date` $line"
+done > vmstat.log

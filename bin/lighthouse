@@ -1,0 +1,2 @@
+#!/bin/sh
+chromium --user-data-dir=~/.config/chromium-bbug --app=https://bookingbug.lighthouseapp.com/projects/17577-bookingbug/overview

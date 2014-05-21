@@ -1,0 +1,4 @@
+#!/bin/sh
+
+#sshfs root@edclements.dyndns-home.com:/media -o workaround=rename -o uid=1050 /mnt/nas/media
+mount nas:/media /mnt/nas/media -o nolock

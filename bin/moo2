@@ -1,0 +1,2 @@
+#!/bin/sh
+dosbox "/home/ed/.wine/drive_c/GOG Games/Master of Orion 1 and 2/Master of Orion 2/Orion2.exe"

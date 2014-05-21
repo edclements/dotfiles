@@ -1,0 +1,2 @@
+#!/bin/sh
+chromium --user-data-dir=~/.config/chromium-bbug --app=https://340178072093.signin.aws.amazon.com/console/s3

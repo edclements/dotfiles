@@ -1,0 +1,3 @@
+#!/bin/sh
+
+dd if=/dev/cdrw of=$1
