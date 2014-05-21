@@ -50,3 +50,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 export GOROOT=/usr/lib/go
 export GOPATH=$HOME/go
+
+export BROWSER=google-chrome
