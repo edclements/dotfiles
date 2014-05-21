@@ -47,3 +47,6 @@ eval $(dircolors -b)
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+export GOROOT=/usr/lib/go
+export GOPATH=$HOME/go
