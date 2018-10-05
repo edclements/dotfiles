@@ -4,19 +4,28 @@
 
 PS1='[\u@\h \W]\$ '
 
-alias ls='ls --color=auto'
 alias vi='vim'
 alias sudo='sudo -E '
-alias grep='grep --color=auto'
+
+# humanize
 alias df='df -h'
 alias du='du -h'
+
+# colour
+alias ls='ls --color=auto'
+export GREP_COLOR="1;33"
+alias grep='grep --color=auto'
+eval $(dircolors -b)
 
 # safety features
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
-export EDITOR=vi
+# defaults
+export EDITOR=vim
+export BROWSER=google-chrome-stable
+
 export LANG=en_GB.UTF-8
 
 export PATH=$PATH:$HOME/bin
@@ -39,16 +48,24 @@ export CONFIG_NO_HZ=n
 export CONFIG_HZ_1000=y
 export CONFIG_APM=n
 
-export GREP_COLOR="1;33"
-
-eval $(dircolors -b)
-
-# This loads RVM into a shell session
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
+# golang
 export GOROOT=/usr/lib/go
 export GOPATH=$HOME/go
 
-export BROWSER=google-chrome
+# fuzzy finder
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export BB_SDK_SRC_DIR="/home/ed/src/bookingbug-angular"
+
+# rbenv
+# export RBENV_ROOT="$HOME/.rbenv"
+# PATH="$RBENV_ROOT/bin:$PATH"
+# eval "$(rbenv init -)"
+
+# ruby
+source /usr/share/chruby/chruby.sh
+
+# git safe
+PATH=".git/safe/../../bin:$PATH"
+
+
