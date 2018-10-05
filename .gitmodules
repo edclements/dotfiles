@@ -1,0 +1,33 @@
+[submodule "/home/ed/.vim/pack/hedalth/start/vim-fugitive"]
+	path = /home/ed/.vim/pack/hedalth/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "/home/ed/.vim/pack/hedalth/start/vim-bundler"]
+	path = /home/ed/.vim/pack/hedalth/start/vim-bundler
+	url = https://github.com/tpope/vim-bundler
+[submodule "/home/ed/.vim/pack/hedalth/start/vim-commentary"]
+	path = /home/ed/.vim/pack/hedalth/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule "/home/ed/.vim/pack/hedalth/start/vim-dispatch"]
+	path = /home/ed/.vim/pack/hedalth/start/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch
+[submodule "/home/ed/.vim/pack/hedalth/start/vim-rails"]
+	path = /home/ed/.vim/pack/hedalth/start/vim-rails
+	url = https://github.com/tpope/vim-rails
+[submodule "/home/ed/.vim/pack/hedalth/start/vim-rspec"]
+	path = /home/ed/.vim/pack/hedalth/start/vim-rspec
+	url = https://github.com/thoughtbot/vim-rspec
+[submodule "/home/ed/.vim/pack/hedalth/start/nerdtree"]
+	path = /home/ed/.vim/pack/hedalth/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "/home/ed/.vim/pack/hedalth/start/syntastic"]
+	path = /home/ed/.vim/pack/hedalth/start/syntastic
+	url = https://github.com/vim-syntastic/syntastic
+[submodule "/home/ed/.vim/pack/hedalth/start/vim-surround"]
+	path = /home/ed/.vim/pack/hedalth/start/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "/home/ed/.vim/pack/hedalth/start/sensible"]
+	path = /home/ed/.vim/pack/hedalth/start/sensible
+	url = https://github.com/tpope/sensible
+[submodule "/home/ed/.vim/pack/hedalth/start/vim-solarized"]
+	path = /home/ed/.vim/pack/hedalth/start/vim-solarized
+	url = https://github.com/ericbn/vim-solarized
