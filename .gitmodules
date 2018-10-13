@@ -16,9 +16,6 @@
 [submodule "/home/ed/.vim/pack/hedalth/start/vim-rspec"]
 	path = /home/ed/.vim/pack/hedalth/start/vim-rspec
 	url = https://github.com/thoughtbot/vim-rspec
-[submodule "/home/ed/.vim/pack/hedalth/start/nerdtree"]
-	path = /home/ed/.vim/pack/hedalth/start/nerdtree
-	url = https://github.com/scrooloose/nerdtree
 [submodule "/home/ed/.vim/pack/hedalth/start/syntastic"]
 	path = /home/ed/.vim/pack/hedalth/start/syntastic
 	url = https://github.com/vim-syntastic/syntastic
@@ -31,3 +28,6 @@
 [submodule "/home/ed/.vim/pack/hedalth/start/vim-solarized"]
 	path = /home/ed/.vim/pack/hedalth/start/vim-solarized
 	url = https://github.com/ericbn/vim-solarized
+[submodule ".vim/pack/hedalth/start/vim-vinegar"]
+	path = .vim/pack/hedalth/start/vim-vinegar
+	url = git@github.com:tpope/vim-vinegar.git
