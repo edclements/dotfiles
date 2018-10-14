@@ -18,7 +18,7 @@
 	url = git@github.com:tpope/vim-rails
 [submodule ".vim/pack/hedalth/start/vim-rspec"]
 	path = .vim/pack/hedalth/start/vim-rspec
-	url = git@github.com:thoughtbox/vim-rspec
+	url = git@github.com:thoughtbot/vim-rspec
 [submodule ".vim/pack/hedalth/start/syntastic"]
 	path = .vim/pack/hedalth/start/syntastic
 	url = git@github.com:vim-syntastic/syntastic
