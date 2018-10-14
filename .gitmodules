@@ -25,12 +25,12 @@
 [submodule ".vim/pack/hedalth/start/vim-surround"]
 	path = .vim/pack/hedalth/start/vim-surround
 	url = git@github.com:tpope/vim-surround
-[submodule ".vim/pack/hedalth/start/sensible"]
-	path = .vim/pack/hedalth/start/sensible
-	url = git@github.com:tpope/sensible
 [submodule ".vim/pack/hedalth/start/vim-solarized"]
 	path = .vim/pack/hedalth/start/vim-solarized
 	url = git@github.com:ericbn/vim-solarized
 [submodule ".vim/pack/hedalth/start/csound"]
 	path = .vim/pack/hedalth/start/csound
 	url = git@github.com:luisjure/csound
+[submodule ".vim/pack/hedalth/start/vim-sensible"]
+	path = .vim/pack/hedalth/start/vim-sensible
+	url = git@github.com:tpope/vim-sensible
