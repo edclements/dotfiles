@@ -19,9 +19,6 @@
 [submodule ".vim/pack/hedalth/start/vim-rspec"]
 	path = .vim/pack/hedalth/start/vim-rspec
 	url = git@github.com:thoughtbot/vim-rspec
-[submodule ".vim/pack/hedalth/start/syntastic"]
-	path = .vim/pack/hedalth/start/syntastic
-	url = git@github.com:vim-syntastic/syntastic
 [submodule ".vim/pack/hedalth/start/vim-surround"]
 	path = .vim/pack/hedalth/start/vim-surround
 	url = git@github.com:tpope/vim-surround
@@ -34,3 +31,6 @@
 [submodule ".vim/pack/hedalth/start/vim-sensible"]
 	path = .vim/pack/hedalth/start/vim-sensible
 	url = git@github.com:tpope/vim-sensible
+[submodule ".vim/pack/hedalth/start/ale"]
+	path = .vim/pack/hedalth/start/ale
+	url = git@github.com:w0rp/ale.git

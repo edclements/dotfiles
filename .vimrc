@@ -1,3 +1,10 @@
+" Load all plugins now.
+" Plugins need to be added to runtimepath before helptags can be generated.
+packloadall
+" Load all of the helptags now, after plugins have been loaded.
+" All messages and errors will be ignored.
+silent! helptags ALL
+
 set number " line numbers
 set visualbell t_vb= " turn off noisy bell
 set tabstop=2
@@ -31,9 +38,7 @@ endfunction
 command -bar -nargs=? ShowSpaces call ShowSpaces(<args>)
 command -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
 
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_html_checkers = ['htmlhint']
-let g:syntastic_html_htmlhint_args = '--config ./.htmlhintrc'
+let g:ale_linters = {'javascript': ['eslint']}
 
 if &term =~ '256color'
     " disable Background Color Erase (BCE) so that color schemes
