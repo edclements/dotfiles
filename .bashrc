@@ -12,10 +12,14 @@ alias df='df -h'
 alias du='du -h'
 
 # colour
-alias ls='ls --color=auto'
-export GREP_COLOR="1;33"
-alias grep='grep --color=auto'
-eval $(dircolors -b)
+if command -v dircolors >/dev/null; then
+  alias ls='ls --color=auto'
+  export GREP_COLOR="1;33"
+  alias grep='grep --color=auto'
+  eval $(dircolors -b)
+else
+  export CLICOLOR=1
+fi
 
 # safety features
 alias cp='cp -i'
