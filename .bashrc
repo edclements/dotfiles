@@ -67,7 +67,7 @@ export BB_SDK_SRC_DIR="/home/ed/src/bookingbug-angular"
 # eval "$(rbenv init -)"
 
 # ruby
-source /usr/share/chruby/chruby.sh
+[ -x /usr/share/chruby/chruby.sh ] && source /usr/share/chruby/chruby.sh
 
 # git safe
 PATH=".git/safe/../../bin:$PATH"
