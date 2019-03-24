@@ -12,7 +12,6 @@ set shiftwidth=2
 set expandtab " replace tabs with spaces
 set encoding=utf-8
 set incsearch
-set hlsearch
 
 syntax enable
 set background=dark
