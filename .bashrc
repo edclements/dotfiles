@@ -72,4 +72,6 @@ export BB_SDK_SRC_DIR="/home/ed/src/bookingbug-angular"
 # git safe
 PATH=".git/safe/../../bin:$PATH"
 
-
+for file in $HOME/.bashrc.d/*; do
+  source "$file"
+done
