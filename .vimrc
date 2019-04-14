@@ -23,6 +23,9 @@ set background=dark
 colorscheme solarized
 
 set rtp+=~/.fzf
+if filereadable('/usr/share/doc/fzf/examples/fzf.vim')
+  source /usr/share/doc/fzf/examples/fzf.vim
+endif
 
 function ShowSpaces(...)
   let @/='\v(\s+$)|( +\ze\t)'
