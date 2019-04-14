@@ -16,6 +16,7 @@ if has('mouse')
   set mouse=a
   set ttymouse=xterm2
 endif
+set modeline
 
 syntax enable
 set background=dark
