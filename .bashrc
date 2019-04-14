@@ -59,8 +59,6 @@ export GOPATH=$HOME/go
 # fuzzy finder
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-export BB_SDK_SRC_DIR="/home/ed/src/bookingbug-angular"
-
 # rbenv
 # export RBENV_ROOT="$HOME/.rbenv"
 # PATH="$RBENV_ROOT/bin:$PATH"
