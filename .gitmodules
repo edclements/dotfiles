@@ -34,3 +34,9 @@
 [submodule ".vim/pack/hedalth/start/ale"]
 	path = .vim/pack/hedalth/start/ale
 	url = git@github.com:w0rp/ale.git
+[submodule ".vim/pack/hedalth/start/vim-flutter"]
+	path = .vim/pack/hedalth/start/vim-flutter
+	url = git@github.com:thosakwe/vim-flutter.git
+[submodule ".vim/pack/hedalth/start/dart-vim-plugin"]
+	path = .vim/pack/hedalth/start/dart-vim-plugin
+	url = git@github.com:dart-lang/dart-vim-plugin.git
