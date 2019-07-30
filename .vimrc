@@ -14,6 +14,7 @@ set encoding=utf-8
 set incsearch
 if has('mouse')
   set mouse=a
+  set ttymouse=xterm2
 endif
 
 syntax enable
@@ -59,7 +60,8 @@ map <Leader>a :call RunAllSpecs()<CR>
 map <Leader>f :FZF<CR>
 
 " let g:rspec_command = "compiler rspec | set makeprg=zeus | Make rspec {spec}"
-let g:rspec_command = "Dispatch rspec {spec}"
+"let g:rspec_command = "Dispatch rspec {spec}"
+let g:rspec_command = "Dispatch docker-compose exec web bundle exec rspec {spec}"
 
 " set window title in tmux
 autocmd BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window " . expand("%"))
