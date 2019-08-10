@@ -32,6 +32,8 @@ export BROWSER=google-chrome-stable
 
 export LANG=en_GB.UTF-8
 
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/sbin
