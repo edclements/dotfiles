@@ -4,3 +4,4 @@ if command -v gnome-keyring-daemon &> /dev/null && [ -n "$DESKTOP_SESSION" ]; th
   export SSH_AUTH_SOCK
 fi
 
+source ~/.bashrc
