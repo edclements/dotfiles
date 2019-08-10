@@ -2,11 +2,11 @@
 
 setxkbmap gb
 
-if [-f ~/.Xresources]; then
+if [ -f ~/.Xresources ]; then
   xrdb -merge -I$HOME ~/.Xresources
 fi
 
-if [-f ~/.fehbg]; then
+if [  -f ~/.fehbg ]; then
   ~/.fehbg
 else
   xsetroot -solid "#002b36"
