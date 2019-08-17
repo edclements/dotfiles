@@ -5,3 +5,5 @@
 	email = ed.clements@gmail.com
 [core]
 	excludesfile = /home/ed/.gitignore_global
+[alias]
+  trust = "!mkdir -p .git/safe"
