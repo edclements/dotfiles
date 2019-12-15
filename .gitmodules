@@ -25,9 +25,6 @@
 [submodule ".vim/pack/hedalth/start/vim-solarized"]
 	path = .vim/pack/hedalth/start/vim-solarized
 	url = git@github.com:ericbn/vim-solarized
-[submodule ".vim/pack/hedalth/start/csound"]
-	path = .vim/pack/hedalth/start/csound
-	url = git@github.com:luisjure/csound
 [submodule ".vim/pack/hedalth/start/vim-sensible"]
 	path = .vim/pack/hedalth/start/vim-sensible
 	url = git@github.com:tpope/vim-sensible
@@ -41,5 +38,5 @@
 	path = .vim/pack/hedalth/start/dart-vim-plugin
 	url = git@github.com:dart-lang/dart-vim-plugin.git
 [submodule "/home/ed/.vim/pack/hedalth/start/vim-vue"]
-	path = /home/ed/.vim/pack/hedalth/start/vim-vue
-	url = https://github.com/posva/vim-vue.git
+	path = .vim/pack/hedalth/start/vim-vue
+	url = git@github.com:posva/vim-vue.git
