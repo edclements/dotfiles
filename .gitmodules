@@ -38,5 +38,5 @@
 	path = .vim/pack/plugins/opt/dart-vim-plugin
 	url = git@github.com:dart-lang/dart-vim-plugin.git
 [submodule "/home/ed/.vim/pack/hedalth/start/vim-vue"]
-	path = .vim/pack/hedalth/start/vim-vue
+	path = .vim/pack/plugins/opt/vim-vue
 	url = git@github.com:posva/vim-vue.git
