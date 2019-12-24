@@ -1,7 +1,7 @@
 [user]
-	name = ed
-	email = ed.clements@gmail.com
-[core]
-	excludesfile = /home/ed/.gitignore_global
+  name = Ed Clements
+  email = ed.clements@gmail.com
 [alias]
   trust = "!mkdir -p .git/safe"
+[core]
+  excludesfile = ~/.gitignore_global
