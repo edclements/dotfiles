@@ -24,15 +24,13 @@ fi
 # safety features
 alias cp='cp -i'
 alias mv='mv -i'
-alias rm='rm -i'
+alias rm='rm -I'
 
 # defaults
 export EDITOR=vim
 export BROWSER=google-chrome-stable
 
 export LANG=en_GB.UTF-8
-
-export _JAVA_AWT_WM_NONREPARENTING=1
 
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:/usr/sbin
@@ -60,7 +58,8 @@ export GOPATH=$HOME/go
 
 # fuzzy finder
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-[ -f /usr/share/doc/fzf/examples/key-bindings.bash ] && source /usr/share/doc/fzf/examples/key-bindings.bash
+
+export BB_SDK_SRC_DIR="/home/ed/src/bookingbug-angular"
 
 # rbenv
 # export RBENV_ROOT="$HOME/.rbenv"
