@@ -26,6 +26,9 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -I'
 
+alias dswp='find . -type f -name "*.sw[klmnop]" -delete'
+alias fswp='find . -type f -name "*.sw[klmnop]"'
+
 # defaults
 export EDITOR=vim
 export BROWSER=google-chrome-stable
@@ -76,3 +79,9 @@ PATH=".git/safe/../../bin:$PATH"
 for file in $HOME/.bashrc.d/*; do
   source "$file"
 done
+
+PROMPT_COMMAND=chnode_auto
+
+# prevent C-s and C-q from applying/removing scroll lock
+stty stop undef
+stty start undef
