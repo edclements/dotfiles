@@ -47,7 +47,11 @@ endfunction
 command -bar -nargs=? ShowSpaces call ShowSpaces(<args>)
 command -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
 
-let g:ale_linters = {'javascript': ['eslint']}
+let g:ale_linters = {'javascript': ['eslint'], 'ruby': ['rubocop', 'ruby']}
+let g:ale_enabled=0
+autocmd FileType ruby setlocal makeprg=rubocop
+autocmd BufWritePost *.rb silent make! <afile> | silent redraw!
+" autocmd QuickFixCmdPost [^l]* cwindow
 
 if &term =~ '256color'
     " disable Background Color Erase (BCE) so that color schemes
@@ -63,9 +67,11 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 map <Leader>f :FZF<CR>
 
-" let g:rspec_command = "compiler rspec | set makeprg=zeus | Make rspec {spec}"
+let g:rspec_command = "compiler rspec | set makeprg=zeus | Make rspec {spec}"
 "let g:rspec_command = "Dispatch rspec {spec}"
-let g:rspec_command = "Dispatch docker-compose exec web bundle exec rspec {spec}"
+"let g:rspec_command = "Dispatch docker-compose exec web bundle exec rspec {spec}"
 
 " set window title in tmux
 autocmd BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window " . expand("%"))
+
+let errormarker_errortext = "-"

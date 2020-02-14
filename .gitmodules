@@ -40,3 +40,6 @@
 [submodule "/home/ed/.vim/pack/hedalth/start/vim-vue"]
 	path = .vim/pack/plugins/opt/vim-vue
 	url = git@github.com:posva/vim-vue.git
+[submodule ".vim/pack/plugins/start/errormarker.vim"]
+	path = .vim/pack/plugins/start/errormarker.vim
+	url = git://github.com/mh21/errormarker.vim
