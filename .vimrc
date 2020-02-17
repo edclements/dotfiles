@@ -1,3 +1,7 @@
+let errormarker_errortext = ">>"
+let errormarker_errortextgroup = "Error"
+let errormarker_errorgroup = "Normal"
+
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
 packloadall
@@ -74,4 +78,34 @@ let g:rspec_command = "compiler rspec | set makeprg=zeus | Make rspec {spec}"
 " set window title in tmux
 autocmd BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window " . expand("%"))
 
-let errormarker_errortext = "-"
+function! s:ShowErrorAtCursor()
+    if mode(1) isnot# 'n'
+        return
+    endif
+    let [l:bufnr, l:lnum] = getpos(".")[0:1]
+    let l:bufnr = bufnr("%")
+    for l:d in getqflist()
+        if (l:d.bufnr != l:bufnr || l:d.lnum != l:lnum)
+            continue
+        endif
+        redraw | echomsg l:d.text
+    endfor
+    echo
+endfunction
+
+autocmd CursorMoved * call s:ShowErrorAtCursor()
+
+function! QuickFix_toggle()
+    for i in range(1, winnr('$'))
+        let bnum = winbufnr(i)
+        if getbufvar(bnum, '&buftype') == 'quickfix'
+            cclose
+            return
+        endif
+    endfor
+
+    copen
+endfunction
+
+map <F3> :call QuickFix_toggle()<cr>
+
