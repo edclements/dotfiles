@@ -36,6 +36,7 @@ export BROWSER=google-chrome-stable
 export LANG=en_GB.UTF-8
 
 export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/sbin
 export PATH=$PATH:/opt/java/bin
