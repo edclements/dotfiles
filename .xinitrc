@@ -17,6 +17,10 @@ while true; do
   sleep 1m
 done &
 
+if [ -d ~/.screenlayout ]; then
+  ~/.screenlayout/two-monitors.sh
+fi
+
 if uname -v | grep -q -E "Debian|Ubuntu"; then
   exec dwm.ed
 else
