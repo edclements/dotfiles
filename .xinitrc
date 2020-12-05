@@ -13,7 +13,7 @@ else
 fi
 
 while true; do
-  xsetroot -name "$( date +"%F %R" )"
+  bash .xsetroot.sh
   sleep 1m
 done &
 
