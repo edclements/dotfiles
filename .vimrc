@@ -121,3 +121,5 @@ set statusline+=\[%{&fileformat}\]
 set statusline+=\ %-14.(%l,%c%)
 set statusline+=\ %-4.(%p%%%)
 
+set exrc
+set secure
