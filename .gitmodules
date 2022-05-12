@@ -37,8 +37,8 @@
 [submodule ".vim/pack/hedalth/start/dart-vim-plugin"]
 	path = .vim/pack/plugins/opt/dart-vim-plugin
 	url = git@github.com:dart-lang/dart-vim-plugin.git
-[submodule "/home/ed/.vim/pack/hedalth/start/vim-vue"]
-	path = .vim/pack/plugins/opt/vim-vue
+[submodule "/home/ed/.vim/pack/plugins/start/vim-vue"]
+	path = .vim/pack/plugins/start/vim-vue
 	url = git@github.com:posva/vim-vue.git
 [submodule ".vim/pack/plugins/start/errormarker.vim"]
 	path = .vim/pack/plugins/start/errormarker.vim
@@ -46,3 +46,18 @@
 [submodule ".vim/pack/plugins/opt/vim-elixir"]
 	path = .vim/pack/plugins/opt/vim-elixir
 	url = git@github.com:elixir-editors/vim-elixir.git
+[submodule ".vim/pack/plugins/start/plantuml-syntax"]
+	path = .vim/pack/plugins/start/plantuml-syntax
+	url = git@github.com:aklt/plantuml-syntax.git
+[submodule ".vim/pack/plugins/start/vim-javascript"]
+	path = .vim/pack/plugins/start/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule ".vim/pack/plugins/start/typescript-vim"]
+	path = .vim/pack/plugins/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule ".vim/pack/plugins/start/coc"]
+	path = .vim/pack/plugins/start/coc
+	url = "https://github.com/neoclide/coc.nvim.git#release"
+[submodule ".vim/pack/plugins/opt/coc.nvim"]
+	path = .vim/pack/plugins/opt/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
