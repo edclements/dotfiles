@@ -43,3 +43,6 @@
 [submodule ".vim/pack/plugins/start/errormarker.vim"]
 	path = .vim/pack/plugins/start/errormarker.vim
 	url = git://github.com/mh21/errormarker.vim
+[submodule ".vim/pack/plugins/opt/vim-elixir"]
+	path = .vim/pack/plugins/opt/vim-elixir
+	url = git@github.com:elixir-editors/vim-elixir.git
