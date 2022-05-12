@@ -51,7 +51,10 @@ endfunction
 command -bar -nargs=? ShowSpaces call ShowSpaces(<args>)
 command -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
 
-let g:ale_linters = {'javascript': ['eslint'], 'ruby': ['rubocop', 'ruby']}
+let g:coc_global_extensions = ['coc-tsserver']
+
+let g:ale_linters = {'javascript': ['eslint'], 'ruby': ['rubocop', 'ruby'], 'typescript': ['eslint', 'tsserver']}
+" let g:ale_linters = {'javascript': ['eslint']}
 let g:ale_enabled=0
 autocmd FileType ruby setlocal makeprg=rubocop
 autocmd BufWritePost *.rb silent make! <afile> | silent redraw!
