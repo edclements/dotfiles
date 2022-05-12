@@ -56,8 +56,8 @@ let g:coc_global_extensions = ['coc-tsserver']
 let g:ale_linters = {'javascript': ['eslint'], 'ruby': ['rubocop', 'ruby'], 'typescript': ['eslint', 'tsserver']}
 " let g:ale_linters = {'javascript': ['eslint']}
 let g:ale_enabled=0
-autocmd FileType ruby setlocal makeprg=rubocop
-autocmd BufWritePost *.rb silent make! <afile> | silent redraw!
+" autocmd FileType ruby setlocal makeprg=rubocop
+" autocmd BufWritePost *.rb silent lmake! <afile> | silent redraw!
 " autocmd QuickFixCmdPost [^l]* cwindow
 
 if &term =~ '256color'
@@ -79,24 +79,24 @@ let g:rspec_command = "compiler rspec | set makeprg=zeus | Make rspec {spec}"
 "let g:rspec_command = "Dispatch docker-compose exec web bundle exec rspec {spec}"
 
 " set window title in tmux
-autocmd BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window " . expand("%"))
+" autocmd BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window " . expand("%"))
 
-function! s:ShowErrorAtCursor()
-    if mode(1) isnot# 'n'
-        return
-    endif
-    let [l:bufnr, l:lnum] = getpos(".")[0:1]
-    let l:bufnr = bufnr("%")
-    for l:d in getqflist()
-        if (l:d.bufnr != l:bufnr || l:d.lnum != l:lnum)
-            continue
-        endif
-        redraw | echomsg l:d.text
-    endfor
-    echo
-endfunction
+" function! s:ShowErrorAtCursor()
+"     if mode(1) isnot# 'n'
+"         return
+"     endif
+"     let [l:bufnr, l:lnum] = getpos(".")[0:1]
+"     let l:bufnr = bufnr("%")
+"     for l:d in getloclist(0)
+"         if (l:d.bufnr != l:bufnr || l:d.lnum != l:lnum)
+"             continue
+"         endif
+"         redraw | echomsg l:d.text
+"     endfor
+"     echo
+" endfunction
 
-autocmd CursorMoved * call s:ShowErrorAtCursor()
+" autocmd CursorMoved * call s:ShowErrorAtCursor()
 
 function! QuickFix_toggle()
     for i in range(1, winnr('$'))
