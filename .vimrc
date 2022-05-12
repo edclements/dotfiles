@@ -113,14 +113,14 @@ endfunction
 map <F3> :call QuickFix_toggle()<cr>
 
 set statusline=
-set statusline+=%#CursorColumn#
 set statusline+=%{FugitiveStatusline()}
 set statusline+=\ %f
 set statusline+=%h%m%r
 set statusline+=%=
+set statusline+=%{len(getqflist())}
+set statusline+=\ %{len(getloclist(0))}
 set statusline+=\ %y
 set statusline+=\[%{&fileencoding?&fileencoding:&encoding}\]
 set statusline+=\[%{&fileformat}\]
 set statusline+=\ %-14.(%l,%c%)
 set statusline+=\ %-4.(%p%%%)
-
