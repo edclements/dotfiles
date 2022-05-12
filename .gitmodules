@@ -54,7 +54,8 @@
 	url = https://github.com/leafgarland/typescript-vim.git
 [submodule ".vim/pack/plugins/start/coc"]
 	path = .vim/pack/plugins/start/coc
-	url = "https://github.com/neoclide/coc.nvim.git#release"
+	url = https://github.com/neoclide/coc.nvim.git
+	branch = release
 [submodule ".vim/pack/plugins/opt/coc.nvim"]
 	path = .vim/pack/plugins/opt/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
