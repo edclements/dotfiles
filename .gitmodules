@@ -37,8 +37,8 @@
 [submodule ".vim/pack/hedalth/start/dart-vim-plugin"]
 	path = .vim/pack/plugins/opt/dart-vim-plugin
 	url = git@github.com:dart-lang/dart-vim-plugin.git
-[submodule "/home/ed/.vim/pack/plugins/start/vim-vue"]
-	path = .vim/pack/plugins/start/vim-vue
+[submodule "/home/ed/.vim/pack/plugins/opt/vim-vue"]
+	path = .vim/pack/plugins/opt/vim-vue
 	url = git@github.com:posva/vim-vue.git
 [submodule ".vim/pack/plugins/start/errormarker.vim"]
 	path = .vim/pack/plugins/start/errormarker.vim
