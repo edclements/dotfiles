@@ -62,3 +62,6 @@
 [submodule ".vim/pack/plugins/start/vim-minitest"]
 	path = .vim/pack/plugins/start/vim-minitest
 	url = git@github.com:edclements/vim-minitest.git
+[submodule ".vim/pack/plugins/opt/fireplace"]
+	path = .vim/pack/plugins/opt/fireplace
+	url = https://tpope.io/vim/fireplace.git
