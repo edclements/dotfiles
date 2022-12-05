@@ -67,16 +67,7 @@ if &term =~ '256color'
     set t_ut=
 endif
 
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
-
 map <Leader>f :FZF<CR>
-
-let g:rspec_command = "compiler rspec | set makeprg=zeus | Make rspec {spec}"
-"let g:rspec_command = "Dispatch rspec {spec}"
-"let g:rspec_command = "Dispatch docker-compose exec web bundle exec rspec {spec}"
 
 " set window title in tmux
 " autocmd BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window " . expand("%"))
