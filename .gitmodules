@@ -65,3 +65,6 @@
 [submodule ".vim/pack/plugins/opt/fireplace"]
 	path = .vim/pack/plugins/opt/fireplace
 	url = https://tpope.io/vim/fireplace.git
+[submodule ".vim/pack/plugins/start/vim-sensible"]
+	path = .vim/pack/plugins/start/vim-sensible
+	url = https://tpope.io/vim/sensible.git
