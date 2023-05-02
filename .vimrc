@@ -15,14 +15,12 @@ set tabstop=2
 set shiftwidth=2
 set expandtab " replace tabs with spaces
 set encoding=utf-8
-set incsearch
 if has('mouse')
   set mouse=a
   set ttymouse=xterm2
 endif
 set modeline
 
-syntax enable
 set background=dark
 colorscheme solarized
 
