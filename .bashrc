@@ -16,7 +16,7 @@ if command -v dircolors >/dev/null; then
   alias ls='ls --color=auto'
   export GREP_COLOR="1;33"
   alias grep='grep --color=auto'
-  eval $(dircolors -b)
+  eval $(dircolors -b ~/.dir_colors)
 else
   export CLICOLOR=1
 fi
@@ -71,8 +71,8 @@ export BB_SDK_SRC_DIR="/home/ed/src/bookingbug-angular"
 # eval "$(rbenv init -)"
 
 # ruby
-[ -f /usr/share/chruby/chruby.sh ] && source /usr/share/chruby/chruby.sh
-[ -f /usr/share/chruby/auto.sh ] && source /usr/share/chruby/auto.sh
+[ -f $HOME/.chruby/chruby.sh ] && source $HOME/.chruby/chruby.sh
+[ -f $HOME/.chruby/auto.sh ] && source $HOME/.chruby/auto.sh
 
 # git safe
 PATH=".git/safe/../../bin:$PATH"
@@ -81,6 +81,8 @@ for file in $HOME/.bashrc.d/*; do
   source "$file"
 done
 
+[ -f $HOME/.chnode/chnode.sh ] && source $HOME/.chnode/chnode.sh
+[ -f $HOME/.chnode/auto.sh ] && source $HOME/.chnode/auto.sh
 PROMPT_COMMAND=chnode_auto
 
 # prevent C-s and C-q from applying/removing scroll lock
