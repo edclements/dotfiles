@@ -16,7 +16,7 @@ if command -v dircolors >/dev/null; then
   alias ls='ls --color=auto'
   export GREP_COLOR="1;33"
   alias grep='grep --color=auto'
-  eval $(dircolors -b)
+  eval $(dircolors -b ~/.dir_colors)
 else
   export CLICOLOR=1
 fi
