@@ -49,6 +49,12 @@ endfunction
 command -bar -nargs=? ShowSpaces call ShowSpaces(<args>)
 command -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
 
+if has("autocmd")
+  augroup templates
+  autocmd BufNewFile *.plantuml 0r ~/.vim/templates/skeleton.plantuml
+  augroup END
+endif
+
 let g:coc_global_extensions = ['coc-tsserver']
 
 let g:ale_linters = {'javascript': ['eslint'], 'ruby': ['rubocop', 'ruby'], 'typescript': ['eslint', 'tsserver']}
