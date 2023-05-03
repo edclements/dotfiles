@@ -1,6 +1,6 @@
 # -*- sh-shell: bash; -*-
 
-CHNODE_VERSION=0.3.1
+CHNODE_VERSION=0.4.2
 : "${CHNODE_NODES_DIR=$HOME/.nodes}"
 
 chnode_reload() {
@@ -10,7 +10,7 @@ chnode_reload() {
 
     CHNODE_NODES=()
 
-    [[ ! (-d $CHNODE_NODES_DIR && -n "$(command ls -A "$CHNODE_NODES_DIR")") ]] && return
+    [[ ! (-d $CHNODE_NODES_DIR && -n "$(command ls "$CHNODE_NODES_DIR")") ]] && return
 
     CHNODE_NODES+=("$CHNODE_NODES_DIR"/*)
 
@@ -62,7 +62,6 @@ chnode_use() {
 
 chnode_match() {
     local dir node given=$1
-    shift
     for dir in "${CHNODE_NODES[@]}"; do
         dir="${dir%%/}"
         node="${dir##*/}"
