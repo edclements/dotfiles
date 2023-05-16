@@ -1,2 +1,0 @@
-#!/bin/sh
-chromium --user-data-dir=~/.config/chromium-dev --disable-web-security

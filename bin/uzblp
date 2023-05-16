@@ -1,3 +1,0 @@
-#!/bin/sh
-
-uzbl-browser -c ~/.config/uzbl/config-private
