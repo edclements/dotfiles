@@ -1,3 +1,4 @@
+[ -f /usr/share/zsh/site-functions/fzf ] && source /usr/share/zsh/site-functions/fzf
 fpath=(~/.config/zsh/completions $fpath)
 
 zstyle ':completion:*' completer _complete _ignored

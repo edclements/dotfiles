@@ -1,4 +1,5 @@
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f /usr/share/fzf/shell/key-bindings.zsh ] && source /usr/share/fzf/shell/key-bindings.zsh
 source ~/.config/zsh/path.zsh
 source ~/.config/zsh/colors.zsh
 source ~/.config/zsh/options.zsh
