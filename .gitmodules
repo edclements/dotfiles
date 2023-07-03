@@ -68,3 +68,6 @@
 [submodule ".vim/pack/plugins/start/vim-sensible"]
 	path = .vim/pack/plugins/start/vim-sensible
 	url = https://tpope.io/vim/sensible.git
+[submodule "/Users/ed/.vim/pack/plugins/start/vim-terraform"]
+	path = /Users/ed/.vim/pack/plugins/start/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
